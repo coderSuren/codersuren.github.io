@@ -29,6 +29,7 @@ body::before {
   z-index: -1;
 }
 
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
@@ -414,13 +415,23 @@ section .container {
   color: #18d26e;
 }
 
-.about-me .content ul {
+.profile{
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px 20px 20px 50px;
+}
+/* 
+.about-me .content ul{
   list-style: none;
-  padding: 0;
 }
 
-.about-me .content ul li {
+.about-me .content ul li::before {
   margin-bottom: 20px;
+  color: #fff;
   display: flex;
   align-items: center;
 }
@@ -434,7 +445,7 @@ section .container {
   margin-right: 5px;
   color: #18d26e;
   line-height: 0;
-}
+} */
 
 .about-me .content p:last-child {
   margin-bottom: 0;
