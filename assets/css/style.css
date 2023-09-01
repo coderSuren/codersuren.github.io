@@ -20,7 +20,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/backg1.jpg") top right no-repeat;
+  background: #040404 url("../img/profile/backg1.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -416,19 +416,19 @@ section .container {
 }
 
 .profile{
-  max-height: 300px;
-  max-width: 300px;
+  max-height: 250px;
+  max-width: 250px;
   border-radius: 50%;
   overflow: hidden;
   border: 6px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.1);
   margin: 20px 20px 20px 50px;
 }
-/* 
-.about-me .content ul{
-  list-style: none;
+ 
+.about-me .content {
+   text-align: justify;
 }
-
+/*
 .about-me .content ul li::before {
   margin-bottom: 20px;
   color: #fff;
@@ -643,7 +643,7 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume .resume-title {
+.resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -651,14 +651,15 @@ section .container {
   color: #fff;
 }
 
-.resume .resume-item {
+.resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid rgba(255, 255, 255, 0.2);
   position: relative;
+  text-align: justify;
 }
 
-.resume .resume-item h4 {
+.resume-item h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -668,7 +669,7 @@ section .container {
   margin-bottom: 10px;
 }
 
-.resume .resume-item h5 {
+.resume-item h5 {
   font-size: 16px;
   background: rgba(255, 255, 255, 0.15);
   padding: 5px 15px;
@@ -677,19 +678,20 @@ section .container {
   margin-bottom: 10px;
 }
 
-.resume .resume-item ul {
+.resume-item ul {
   padding-left: 20px;
 }
 
-.resume .resume-item ul li {
+.resume-item ul li {
   padding-bottom: 10px;
+  text-align: justify;
 }
 
-.resume .resume-item:last-child {
+.resume-item:last-child {
   padding-bottom: 0;
 }
 
-.resume .resume-item::before {
+.resume-item::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -707,7 +709,7 @@ section .container {
 .services .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
-  padding: 80px 20px;
+  padding: 50px 20px;
   transition: all ease-in-out 0.3s;
 }
 
@@ -745,6 +747,7 @@ section .container {
 
 .services .icon-box h4 {
   font-weight: 700;
+  margin-top: 30px;
   margin-bottom: 15px;
   font-size: 24px;
 }
@@ -757,6 +760,10 @@ section .container {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+}
+.services .icon-box img{
+  width: 300px;
+  height: 180px;
 }
 
 .services .icon-box:hover {
@@ -1011,6 +1018,10 @@ section .container {
   background-color: #18d26e;
 }
 
+.swiper-slide img{
+  width: 600px;
+  height: 400px;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/

@@ -59,6 +59,7 @@
    */
   on('click', '#navbar .nav-link', function(e) {
     let section = select(this.hash)
+    console.log(this.hash);
     if (section) {
       e.preventDefault()
 
